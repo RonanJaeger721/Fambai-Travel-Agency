@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fambai Travel Agency | Premium Car Rental</title>
+    <meta name="description" content="Premium car rental, airport transfers, SUVs, sport, luxury and sedan hire from Fambai Travel Agency.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preload" as="image" href="assets/white-rocco-sunset.jpeg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Fambai Travel Agency home">
+        <span class="logo-shell"><img src="assets/fambai-logo.jpeg" alt="Fambai Travel Agency logo"></span>
+        <span class="brand-copy"><strong>Fambai</strong><small>Travel Agency</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#fleet">Fleet</a>
+        <a href="#service">Service</a>
+        <a href="#routes">Trips</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="call-link" href="tel:0780391836" aria-label="Call Fambai Travel Agency">0780391836</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/white-rocco-sunset.jpeg" alt="">
+          <div class="hero-sheen"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Drive / Explore / Experience</p>
+            <h1>Premium car hire, made effortless.</h1>
+            <p class="hero-text">Choose from ready-for-the-road SUVs, sport pickups, luxury 4x4s and executive sedans, then book direct with Fambai Travel Agency.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="#booking">Book a car</a>
+              <a class="button ghost" href="#fleet">View fleet</a>
+            </div>
+          </div>
+
+          <form class="booking-card reveal" id="booking" data-booking-form>
+            <div class="booking-head">
+              <span>Reserve your ride</span>
+              <strong>Fast quote</strong>
+            </div>
+            <label>
+              <span>Pick-up</span>
+              <input name="pickup" type="text" placeholder="Airport, hotel or city" autocomplete="off">
+            </label>
+            <label>
+              <span>Drop-off</span>
+              <input name="dropoff" type="text" placeholder="Same or different place" autocomplete="off">
+            </label>
+            <div class="booking-grid">
+              <label>
+                <span>From</span>
+                <input name="from" type="date">
+              </label>
+              <label>
+                <span>To</span>
+                <input name="to" type="date">
+              </label>
+            </div>
+            <label>
+              <span>Car type</span>
+              <select name="type">
+                <option>SUV</option>
+                <option>Sport</option>
+                <option>Luxury</option>
+                <option>Sedan</option>
+              </select>
+            </label>
+            <button class="button primary full" type="submit">Send booking request</button>
+          </form>
+        </div>
+        <div class="hero-strip" aria-label="Rental highlights">
+          <span>Airport transfers</span>
+          <span>Self-drive hire</span>
+          <span>Chauffeur options</span>
+          <span>Flexible daily rates</span>
+        </div>
+      </section>
+
+      <section class="quick-select" aria-label="Browse by car type">
+        <button class="type-pill active reveal" data-filter="all">
+          <span>All</span>
+          <strong>Fleet</strong>
+        </button>
+        <button class="type-pill reveal" data-filter="suv">
+          <span>SUV</span>
+          <strong>4x4 comfort</strong>
+        </button>
+        <button class="type-pill reveal" data-filter="sport">
+          <span>Sport</span>
+          <strong>Bold pickups</strong>
+        </button>
+        <button class="type-pill reveal" data-filter="luxury">
+          <span>Luxury</span>
+          <strong>VIP travel</strong>
+        </button>
+        <button class="type-pill reveal" data-filter="sedan">
+          <span>Sedans</span>
+          <strong>Executive rides</strong>
+        </button>
+      </section>
+
+      <section class="section intro reveal">
+        <div>
+          <p class="eyebrow">Fambai Travel Agency</p>
+          <h2>Car rental made direct, polished and dependable.</h2>
+        </div>
+        <p>From family travel to business visits and weekend getaways, Fambai pairs clean vehicles with simple booking support. Call or WhatsApp the team and get matched to the right car for the route.</p>
+      </section>
+
+      <section class="fleet section" id="fleet">
+        <div class="section-title reveal">
+          <p class="eyebrow">Choose your car</p>
+          <h2>Fleet selection</h2>
+        </div>
+
+        <div class="fleet-grid" data-fleet-grid>
+          <article class="car-card reveal" data-category="suv luxury">
+            <figure>
+              <img src="assets/black-prado-side.jpeg" alt="Black Toyota Prado SUV side view">
+            </figure>
+            <div class="car-card-body">
+              <span class="tag">Luxury SUV</span>
+              <h3>Toyota Prado</h3>
+              <p>Premium cabin, high ride comfort and confident long-distance presence.</p>
+              <dl>
+                <div><dt>Seats</dt><dd>7</dd></div>
+                <div><dt>Best for</dt><dd>VIP & family trips</dd></div>
+              </dl>
+              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20the%20Toyota%20Prado." class="text-link">Request Prado</a>
+            </div>
+          </article>
+
+          <article class="car-card reveal" data-category="suv">
+            <figure>
+              <img src="assets/white-fortuner-side.jpeg" alt="White Toyota Fortuner SUV side view">
+            </figure>
+            <div class="car-card-body">
+              <span class="tag">SUV</span>
+              <h3>Toyota Fortuner</h3>
+              <p>Versatile SUV space for airport runs, events and comfortable road trips.</p>
+              <dl>
+                <div><dt>Seats</dt><dd>7</dd></div>
+                <div><dt>Best for</dt><dd>Group travel</dd></div>
+              </dl>
+              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20the%20Toyota%20Fortuner." class="text-link">Request Fortuner</a>
+            </div>
+          </article>
+
+          <article class="car-card reveal" data-category="sport suv">
+            <figure>
+              <img src="assets/silver-hilux-front.jpeg" alt="Silver Toyota Hilux pickup front view">
+            </figure>
+            <div class="car-card-body">
+              <span class="tag">Sport Pickup</span>
+              <h3>Toyota Hilux</h3>
+              <p>Strong, stylish and ready for luggage, business gear or adventure routes.</p>
+              <dl>
+                <div><dt>Seats</dt><dd>5</dd></div>
+                <div><dt>Best for</dt><dd>Utility & leisure</dd></div>
+              </dl>
+              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20the%20Toyota%20Hilux." class="text-link">Request Hilux</a>
+            </div>
+          </article>
+
+          <article class="car-card reveal" data-category="sport">
+            <figure>
+              <img src="assets/grey-hilux-rear.jpeg" alt="Grey Toyota Hilux rear view">
+            </figure>
+            <div class="car-card-body">
+              <span class="tag">Sport</span>
+              <h3>Hilux Rocco</h3>
+              <p>A sharper pickup look for drivers who want presence and capability.</p>
+              <dl>
+                <div><dt>Seats</dt><dd>5</dd></div>
+                <div><dt>Best for</dt><dd>Weekend travel</dd></div>
+              </dl>
+              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20the%20Hilux%20Rocco." class="text-link">Request Rocco</a>
+            </div>
+          </article>
+
+          <article class="car-card reveal" data-category="suv sedan">
+            <figure>
+              <img src="assets/red-mazda-cx5.jpeg" alt="Red Mazda CX-5 front view">
+            </figure>
+            <div class="car-card-body">
+              <span class="tag">Compact Class</span>
+              <h3>Mazda CX-5</h3>
+              <p>Easy handling, polished cabin feel and a city-friendly profile.</p>
+              <dl>
+                <div><dt>Seats</dt><dd>5</dd></div>
+                <div><dt>Best for</dt><dd>City & business</dd></div>
+              </dl>
+              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20the%20Mazda%20CX-5." class="text-link">Request Mazda</a>
+            </div>
+          </article>
+
+          <article class="car-card reveal" data-category="luxury sedan">
+            <figure>
+              <img src="assets/black-prado-rear.jpeg" alt="Black Toyota Prado rear view">
+            </figure>
+            <div class="car-card-body">
+              <span class="tag">Executive</span>
+              <h3>Luxury & Sedan Desk</h3>
+              <p>Ask for available executive sedans, chauffeur-ready options and VIP transfers.</p>
+              <dl>
+                <div><dt>Seats</dt><dd>4-5</dd></div>
+                <div><dt>Best for</dt><dd>Meetings & arrivals</dd></div>
+              </dl>
+              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20ask%20about%20luxury%20or%20sedan%20hire." class="text-link">Ask availability</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="service-band" id="service">
+        <div class="service-copy reveal">
+          <p class="eyebrow">Built for real travel</p>
+          <h2>Clean handovers, flexible bookings and vehicles that suit the road ahead.</h2>
+          <a class="button primary" href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20need%20help%20choosing%20a%20rental%20car.">Chat on WhatsApp</a>
+        </div>
+        <div class="service-list">
+          <article class="service-item reveal">
+            <span>01</span>
+            <h3>Airport to hotel</h3>
+            <p>Pickup support for arrivals, guest movement and luggage-friendly transfers.</p>
+          </article>
+          <article class="service-item reveal">
+            <span>02</span>
+            <h3>Self-drive hire</h3>
+            <p>Daily rental options for drivers who want privacy and freedom on their schedule.</p>
+          </article>
+          <article class="service-item reveal">
+            <span>03</span>
+            <h3>Chauffeur option</h3>
+            <p>Ask for a driver when the trip calls for a calmer, door-to-door experience.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="routes section" id="routes">
+        <div class="route-card reveal">
+          <img src="assets/white-rocco-sunset.jpeg" alt="White Hilux Rocco at sunset">
+          <div>
+            <p class="eyebrow">Trip-ready rentals</p>
+            <h2>Arrive with the right car for the occasion.</h2>
+            <p>Business transfers, family holidays, wedding movement, events, errands and out-of-town road trips are easier when the car matches the day.</p>
+          </div>
+        </div>
+        <div class="route-stats reveal" aria-label="Rental benefits">
+          <div><strong>4</strong><span>Rental classes</span></div>
+          <div><strong>7</strong><span>Seat SUV options</span></div>
+          <div><strong>24h</strong><span>Direct booking line</span></div>
+        </div>
+      </section>
+
+      <section class="contact section reveal" id="contact">
+        <img src="assets/fambai-logo.jpeg" alt="Fambai Travel Agency logo">
+        <div>
+          <p class="eyebrow">Ready when you are</p>
+          <h2>Call Fambai Travel Agency and reserve your next ride.</h2>
+          <p>Tell the team your dates, route, passenger count and preferred class. They will guide you to the best available option.</p>
+          <div class="contact-actions">
+            <a class="button primary" href="tel:0780391836">Call 0780391836</a>
+            <a class="button ghost dark" href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20would%20like%20to%20rent%20a%20car.">WhatsApp now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Fambai Travel Agency</span>
+      <a href="tel:0780391836">0780391836</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
