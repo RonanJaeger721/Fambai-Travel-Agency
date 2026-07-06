@@ -7,7 +7,7 @@
     <meta name="description" content="Car rental from Fambai: fuel savers, mid-size SUVs, double cabs, SUVs and minibuses from $50 per day.">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="preload" as="image" href="assets/grey-hilux-road.jpeg">
-    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="styles.css?v=5">
   </head>
   <body>
     <header class="site-header" data-header>
@@ -28,8 +28,12 @@
     <main id="top">
       <section class="hero">
         <div class="hero-media" aria-hidden="true">
-          <img src="assets/grey-hilux-road.jpeg" alt="">
+          <img src="assets/grey-hilux-road.jpeg" alt="" data-hero-image>
           <div class="hero-sheen"></div>
+          <div class="hero-loader">
+            <span data-hero-caption>Double cabs from $120/day</span>
+            <div class="hero-progress"><i data-hero-progress></i></div>
+          </div>
         </div>
         <div class="hero-content">
           <div class="hero-copy reveal">
@@ -72,6 +76,7 @@
                 <option>Mid-size SUV - from $70/day</option>
                 <option>Double Cab - from $120/day</option>
                 <option>SUV - from $120/day</option>
+                <option>Luxury Mercedes - from $150/day</option>
                 <option>Minibus - from $100/day</option>
               </select>
             </label>
@@ -80,8 +85,9 @@
         </div>
         <div class="hero-strip" aria-label="Rental highlights">
           <span>Fuel savers from $50</span>
-          <span>SUVs from $70</span>
+          <span>Mid SUVs from $70</span>
           <span>Double cabs from $120</span>
+          <span>Luxury from $150</span>
           <span>Minibuses from $100</span>
         </div>
       </section>
@@ -106,6 +112,10 @@
         <button class="type-pill reveal" data-filter="suv">
           <span>SUV</span>
           <strong>From $120</strong>
+        </button>
+        <button class="type-pill reveal" data-filter="luxury">
+          <span>Luxury</span>
+          <strong>From $150</strong>
         </button>
         <button class="type-pill reveal" data-filter="minibus">
           <span>Minibus</span>
@@ -141,6 +151,11 @@
           <span>SUVs</span>
           <strong>$120</strong>
           <small>from / day</small>
+        </button>
+        <button class="price-tile" type="button" data-price-filter="luxury">
+          <span>Luxury</span>
+          <strong>$150</strong>
+          <small>per day</small>
         </button>
         <button class="price-tile" type="button" data-price-filter="minibus">
           <span>Minibuses</span>
@@ -236,6 +251,22 @@
             </div>
           </article>
 
+          <article class="car-card reveal" data-category="luxury">
+            <figure>
+              <img src="assets/mercedes-cla-silver.jpeg" alt="Silver Mercedes CLA luxury rental car">
+            </figure>
+            <div class="car-card-body">
+              <span class="tag">Luxury</span>
+              <h3>Mercedes CLA</h3>
+              <p>Premium executive hire for meetings, arrivals, weddings and polished city movement.</p>
+              <dl>
+                <div><dt>Rate</dt><dd>$150/day</dd></div>
+                <div><dt>Best for</dt><dd>Executive travel</dd></div>
+              </dl>
+              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20the%20Mercedes%20luxury%20car%20from%20%24150%20per%20day." class="text-link">Request Mercedes</a>
+            </div>
+          </article>
+
           <article class="car-card reveal" data-category="fuel midsize">
             <figure>
               <img src="assets/fuel-savers-lineup.jpeg" alt="Lineup of compact fuel saver vehicles">
@@ -291,7 +322,7 @@
         <div class="route-stats reveal" aria-label="Rental benefits">
           <div><strong>$50</strong><span>Fuel saver daily rate</span></div>
           <div><strong>$70</strong><span>Mid-size SUV daily rate</span></div>
-          <div><strong>$100</strong><span>Minibus from / day</span></div>
+          <div><strong>$150</strong><span>Luxury Mercedes daily rate</span></div>
         </div>
       </section>
 
@@ -314,6 +345,6 @@
       <a href="tel:0780391836">0780391836</a>
     </footer>
 
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=5"></script>
   </body>
 </html>

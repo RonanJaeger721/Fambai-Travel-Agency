@@ -171,6 +171,12 @@ select {
   object-fit: cover;
   filter: saturate(1.08) contrast(1.06);
   animation: heroZoom 11s ease forwards;
+  opacity: 1;
+  transition: opacity 0.48s ease, transform 0.8s ease;
+}
+
+.hero-media img.is-switching {
+  opacity: 0;
 }
 
 .hero-media::after {
@@ -189,6 +195,44 @@ select {
   transform: translateX(-65%) rotate(4deg);
   animation: sheen 4.8s ease 0.8s forwards;
   mix-blend-mode: screen;
+}
+
+.hero-loader {
+  position: absolute;
+  top: 104px;
+  left: max(24px, calc((100vw - 1180px) / 2));
+  z-index: 2;
+  display: grid;
+  gap: 10px;
+  width: min(300px, calc(100vw - 48px));
+  padding: 10px 12px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.82rem;
+  font-weight: 680;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: rgba(3, 18, 37, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  backdrop-filter: blur(12px);
+}
+
+.hero-progress {
+  position: relative;
+  height: 3px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 99px;
+}
+
+.hero-progress i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 100%;
+  background: linear-gradient(90deg, var(--orange), #ffb16c);
+  border-radius: inherit;
+  transform-origin: left center;
+  animation: heroProgress 8s linear infinite;
 }
 
 .hero-content {
@@ -370,7 +414,7 @@ select:focus {
   bottom: 18px;
   left: 24px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1px;
   overflow: hidden;
   border-radius: 8px;
@@ -394,7 +438,7 @@ select:focus {
   position: relative;
   z-index: 3;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   gap: 1px;
   width: min(1180px, calc(100% - 40px));
   margin: -34px auto 0;
@@ -452,7 +496,7 @@ select:focus {
 
 .pricing {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 10px;
   overflow: visible;
   padding-top: 0;
@@ -815,6 +859,16 @@ footer {
   }
 }
 
+@keyframes heroProgress {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -884,6 +938,10 @@ footer {
     width: min(1180px, calc(100% - 40px));
     margin: -66px auto 20px;
   }
+
+  .hero-loader {
+    top: 102px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -920,7 +978,7 @@ footer {
 
   .hero-content {
     min-height: auto;
-    padding: 92px 0 78px;
+    padding: 92px 0 92px;
   }
 
   h1 {
@@ -946,6 +1004,12 @@ footer {
 
   .quick-select {
     margin-top: -24px;
+  }
+
+  .hero-loader {
+    top: 76px;
+    left: 12px;
+    width: calc(100% - 24px);
   }
 
   .type-pill {
