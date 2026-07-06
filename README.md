@@ -1,6 +1,6 @@
-# Fambai Travel Agency
+# Fambai Car Rental
 
-Premium static car rental website for Fambai Travel Agency.
+Premium static car rental website for Fambai Car Rental.
 
 ## What is included
 
@@ -9,6 +9,7 @@ Premium static car rental website for Fambai Travel Agency.
 - WhatsApp booking links
 - Fambai logo favicon
 - Local vehicle imagery
+- Daily pricing for fuel savers, SUVs, double cabs and minibuses
 
 ## Contact
 

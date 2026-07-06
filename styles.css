@@ -120,7 +120,7 @@ select {
 .nav-links {
   display: flex;
   justify-content: center;
-  gap: 34px;
+  gap: 26px;
   font-size: 0.92rem;
   font-weight: 620;
   color: rgba(255, 255, 255, 0.72);
@@ -394,7 +394,7 @@ select:focus {
   position: relative;
   z-index: 3;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 1px;
   width: min(1180px, calc(100% - 40px));
   margin: -34px auto 0;
@@ -448,6 +448,45 @@ select:focus {
   grid-template-columns: 1.08fr 0.92fr;
   gap: 44px;
   align-items: end;
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  padding-top: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 22px 70px rgba(4, 25, 54, 0.07);
+}
+
+.pricing article {
+  display: grid;
+  gap: 4px;
+  min-height: 122px;
+  align-content: center;
+  padding: 18px;
+  background: #fff;
+}
+
+.pricing span {
+  color: var(--blue-ink);
+  font-weight: 700;
+}
+
+.pricing strong {
+  color: var(--orange);
+  font-size: 2.15rem;
+  font-weight: 640;
+  line-height: 1;
+}
+
+.pricing small {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 680;
+  text-transform: uppercase;
 }
 
 .intro p:last-child,
@@ -583,7 +622,7 @@ dd {
   color: #fff;
   background:
     linear-gradient(135deg, rgba(4, 25, 54, 0.96), rgba(0, 63, 134, 0.9)),
-    url("assets/silver-hilux-front.jpeg") center / cover;
+    url("assets/promo-suv-double-cabs.jpeg") center / cover;
   background-blend-mode: multiply;
 }
 
@@ -819,6 +858,10 @@ footer {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .pricing {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .hero-strip {
     position: relative;
     right: auto;
@@ -881,6 +924,7 @@ footer {
 
   .booking-grid,
   .quick-select,
+  .pricing,
   .fleet-grid,
   .hero-strip,
   .contact {

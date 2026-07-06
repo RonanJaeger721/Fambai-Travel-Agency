@@ -3,38 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fambai Travel Agency | Premium Car Rental</title>
-    <meta name="description" content="Premium car rental, airport transfers, SUVs, sport, luxury and sedan hire from Fambai Travel Agency.">
+    <title>Fambai Car Rental | Premium Vehicle Hire</title>
+    <meta name="description" content="Car rental from Fambai: fuel savers, mid-size SUVs, double cabs, SUVs and minibuses from $50 per day.">
     <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="preload" as="image" href="assets/white-rocco-sunset.jpeg">
+    <link rel="preload" as="image" href="assets/grey-hilux-road.jpeg">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Fambai Travel Agency home">
-        <span class="logo-shell"><img src="assets/fambai-logo.jpeg" alt="Fambai Travel Agency logo"></span>
-        <span class="brand-copy"><strong>Fambai</strong><small>Travel Agency</small></span>
+      <a class="brand" href="#top" aria-label="Fambai Car Rental home">
+        <span class="logo-shell"><img src="assets/fambai-car-rental-gold.jpeg" alt="Fambai Car Rental logo"></span>
+        <span class="brand-copy"><strong>Fambai</strong><small>Car Rental</small></span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#fleet">Fleet</a>
+        <a href="#pricing">Pricing</a>
         <a href="#service">Service</a>
         <a href="#routes">Trips</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="call-link" href="tel:0780391836" aria-label="Call Fambai Travel Agency">0780391836</a>
+      <a class="call-link" href="tel:0780391836" aria-label="Call Fambai Car Rental">0780391836</a>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-media" aria-hidden="true">
-          <img src="assets/white-rocco-sunset.jpeg" alt="">
+          <img src="assets/grey-hilux-road.jpeg" alt="">
           <div class="hero-sheen"></div>
         </div>
         <div class="hero-content">
           <div class="hero-copy reveal">
             <p class="eyebrow">Drive / Explore / Experience</p>
-            <h1>Premium car hire, made effortless.</h1>
-            <p class="hero-text">Choose from ready-for-the-road SUVs, sport pickups, luxury 4x4s and executive sedans, then book direct with Fambai Travel Agency.</p>
+            <h1>Cars ready from $50 per day.</h1>
+            <p class="hero-text">Fuel savers, mid-size SUVs, double cabs, family SUVs and minibuses, all booked direct with Fambai Car Rental.</p>
             <div class="hero-actions">
               <a class="button primary" href="#booking">Book a car</a>
               <a class="button ghost" href="#fleet">View fleet</a>
@@ -67,20 +68,21 @@
             <label>
               <span>Car type</span>
               <select name="type">
-                <option>SUV</option>
-                <option>Sport</option>
-                <option>Luxury</option>
-                <option>Sedan</option>
+                <option>Fuel Saver - from $50/day</option>
+                <option>Mid-size SUV - from $70/day</option>
+                <option>Double Cab - from $120/day</option>
+                <option>SUV - from $120/day</option>
+                <option>Minibus - from $100/day</option>
               </select>
             </label>
             <button class="button primary full" type="submit">Send booking request</button>
           </form>
         </div>
         <div class="hero-strip" aria-label="Rental highlights">
-          <span>Airport transfers</span>
-          <span>Self-drive hire</span>
-          <span>Chauffeur options</span>
-          <span>Flexible daily rates</span>
+          <span>Fuel savers from $50</span>
+          <span>SUVs from $70</span>
+          <span>Double cabs from $120</span>
+          <span>Minibuses from $100</span>
         </div>
       </section>
 
@@ -89,30 +91,62 @@
           <span>All</span>
           <strong>Fleet</strong>
         </button>
+        <button class="type-pill reveal" data-filter="fuel">
+          <span>Fuel</span>
+          <strong>From $50</strong>
+        </button>
+        <button class="type-pill reveal" data-filter="midsize">
+          <span>Mid SUV</span>
+          <strong>From $70</strong>
+        </button>
+        <button class="type-pill reveal" data-filter="doublecab">
+          <span>Double cab</span>
+          <strong>From $120</strong>
+        </button>
         <button class="type-pill reveal" data-filter="suv">
           <span>SUV</span>
-          <strong>4x4 comfort</strong>
+          <strong>From $120</strong>
         </button>
-        <button class="type-pill reveal" data-filter="sport">
-          <span>Sport</span>
-          <strong>Bold pickups</strong>
-        </button>
-        <button class="type-pill reveal" data-filter="luxury">
-          <span>Luxury</span>
-          <strong>VIP travel</strong>
-        </button>
-        <button class="type-pill reveal" data-filter="sedan">
-          <span>Sedans</span>
-          <strong>Executive rides</strong>
+        <button class="type-pill reveal" data-filter="minibus">
+          <span>Minibus</span>
+          <strong>From $100</strong>
         </button>
       </section>
 
       <section class="section intro reveal">
         <div>
-          <p class="eyebrow">Fambai Travel Agency</p>
-          <h2>Car rental made direct, polished and dependable.</h2>
+          <p class="eyebrow">Fambai Car Rental</p>
+          <h2>Simple daily rates, real cars, direct booking.</h2>
         </div>
-        <p>From family travel to business visits and weekend getaways, Fambai pairs clean vehicles with simple booking support. Call or WhatsApp the team and get matched to the right car for the route.</p>
+        <p>Choose the class that fits your route and budget. From economical city runs to group movement and 4x4 travel, Fambai keeps the booking process direct and practical.</p>
+      </section>
+
+      <section class="pricing section reveal" id="pricing" aria-label="Daily rental pricing">
+        <article>
+          <span>Fuel savers</span>
+          <strong>$50</strong>
+          <small>per day</small>
+        </article>
+        <article>
+          <span>Mid-size SUVs</span>
+          <strong>$70</strong>
+          <small>per day</small>
+        </article>
+        <article>
+          <span>Double cabs</span>
+          <strong>$120</strong>
+          <small>from / day</small>
+        </article>
+        <article>
+          <span>SUVs</span>
+          <strong>$120</strong>
+          <small>from / day</small>
+        </article>
+        <article>
+          <span>Minibuses</span>
+          <strong>$100</strong>
+          <small>from / day</small>
+        </article>
       </section>
 
       <section class="fleet section" id="fleet">
@@ -122,99 +156,99 @@
         </div>
 
         <div class="fleet-grid" data-fleet-grid>
-          <article class="car-card reveal" data-category="suv luxury">
+          <article class="car-card reveal" data-category="fuel">
             <figure>
-              <img src="assets/black-prado-side.jpeg" alt="Black Toyota Prado SUV side view">
+              <img src="assets/mazda-demio-blue.jpeg" alt="Blue Mazda Demio fuel saver rental car">
             </figure>
             <div class="car-card-body">
-              <span class="tag">Luxury SUV</span>
-              <h3>Toyota Prado</h3>
-              <p>Premium cabin, high ride comfort and confident long-distance presence.</p>
+              <span class="tag">Fuel saver</span>
+              <h3>Mazda Demio / Honda Fit</h3>
+              <p>Low-cost daily hire for errands, city runs and light business movement.</p>
               <dl>
-                <div><dt>Seats</dt><dd>7</dd></div>
-                <div><dt>Best for</dt><dd>VIP & family trips</dd></div>
+                <div><dt>Rate</dt><dd>$50/day</dd></div>
+                <div><dt>Best for</dt><dd>Economy travel</dd></div>
               </dl>
-              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20the%20Toyota%20Prado." class="text-link">Request Prado</a>
+              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20a%20fuel%20saver%20from%20%2450%20per%20day." class="text-link">Request fuel saver</a>
+            </div>
+          </article>
+
+          <article class="car-card reveal" data-category="midsize">
+            <figure>
+              <img src="assets/honda-vezel-black.jpeg" alt="Black Honda Vezel mid-size SUV rental car">
+            </figure>
+            <div class="car-card-body">
+              <span class="tag">Mid-size SUV</span>
+              <h3>Honda Vezel / Nissan X-Trail</h3>
+              <p>Compact SUV comfort for city travel, meetings and weekend movement.</p>
+              <dl>
+                <div><dt>Rate</dt><dd>$70/day</dd></div>
+                <div><dt>Best for</dt><dd>Small groups</dd></div>
+              </dl>
+              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20a%20mid-size%20SUV%20from%20%2470%20per%20day." class="text-link">Request mid-size SUV</a>
+            </div>
+          </article>
+
+          <article class="car-card reveal" data-category="doublecab">
+            <figure>
+              <img src="assets/grey-hilux-road.jpeg" alt="Grey Toyota Hilux double cab rental car">
+            </figure>
+            <div class="car-card-body">
+              <span class="tag">Double cab</span>
+              <h3>Toyota Hilux Double Cab</h3>
+              <p>Strong pickup hire for luggage, site visits, adventure roads and business utility.</p>
+              <dl>
+                <div><dt>Rate</dt><dd>From $120/day</dd></div>
+                <div><dt>Best for</dt><dd>Utility & travel</dd></div>
+              </dl>
+              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20a%20double%20cab%20from%20%24120%20per%20day." class="text-link">Request double cab</a>
             </div>
           </article>
 
           <article class="car-card reveal" data-category="suv">
             <figure>
-              <img src="assets/white-fortuner-side.jpeg" alt="White Toyota Fortuner SUV side view">
+              <img src="assets/white-fortuner-road.jpeg" alt="White Toyota Fortuner SUV rental car on the road">
             </figure>
             <div class="car-card-body">
               <span class="tag">SUV</span>
-              <h3>Toyota Fortuner</h3>
-              <p>Versatile SUV space for airport runs, events and comfortable road trips.</p>
+              <h3>Toyota Fortuner / Prado</h3>
+              <p>Spacious, comfortable SUV options for families, executives and long-distance routes.</p>
               <dl>
-                <div><dt>Seats</dt><dd>7</dd></div>
-                <div><dt>Best for</dt><dd>Group travel</dd></div>
+                <div><dt>Rate</dt><dd>From $120/day</dd></div>
+                <div><dt>Best for</dt><dd>7-seat comfort</dd></div>
               </dl>
-              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20the%20Toyota%20Fortuner." class="text-link">Request Fortuner</a>
+              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20an%20SUV%20from%20%24120%20per%20day." class="text-link">Request SUV</a>
             </div>
           </article>
 
-          <article class="car-card reveal" data-category="sport suv">
+          <article class="car-card reveal" data-category="minibus">
             <figure>
-              <img src="assets/silver-hilux-front.jpeg" alt="Silver Toyota Hilux pickup front view">
+              <img src="assets/minibus-white.jpeg" alt="White Nissan minibuses available for hire">
             </figure>
             <div class="car-card-body">
-              <span class="tag">Sport Pickup</span>
-              <h3>Toyota Hilux</h3>
-              <p>Strong, stylish and ready for luggage, business gear or adventure routes.</p>
+              <span class="tag">Minibus</span>
+              <h3>Nissan Caravan / Minibus</h3>
+              <p>Group transport for airport movement, events, tours and team travel.</p>
               <dl>
-                <div><dt>Seats</dt><dd>5</dd></div>
-                <div><dt>Best for</dt><dd>Utility & leisure</dd></div>
+                <div><dt>Rate</dt><dd>From $100/day</dd></div>
+                <div><dt>Best for</dt><dd>Group trips</dd></div>
               </dl>
-              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20the%20Toyota%20Hilux." class="text-link">Request Hilux</a>
+              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20a%20minibus%20from%20%24100%20per%20day." class="text-link">Request minibus</a>
             </div>
           </article>
 
-          <article class="car-card reveal" data-category="sport">
+          <article class="car-card reveal" data-category="fuel midsize">
             <figure>
-              <img src="assets/grey-hilux-rear.jpeg" alt="Grey Toyota Hilux rear view">
+              <img src="assets/fuel-savers-lineup.jpeg" alt="Lineup of compact fuel saver vehicles">
             </figure>
             <div class="car-card-body">
-              <span class="tag">Sport</span>
-              <h3>Hilux Rocco</h3>
-              <p>A sharper pickup look for drivers who want presence and capability.</p>
+              <span class="tag">More options</span>
+              <h3>Fuel Saver Fleet</h3>
+              <p>Ask what is available today across compact cars and economical crossovers.</p>
               <dl>
-                <div><dt>Seats</dt><dd>5</dd></div>
-                <div><dt>Best for</dt><dd>Weekend travel</dd></div>
+                <div><dt>Rate</dt><dd>From $50/day</dd></div>
+                <div><dt>Best for</dt><dd>Flexible booking</dd></div>
               </dl>
-              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20the%20Hilux%20Rocco." class="text-link">Request Rocco</a>
-            </div>
-          </article>
-
-          <article class="car-card reveal" data-category="suv sedan">
-            <figure>
-              <img src="assets/red-mazda-cx5.jpeg" alt="Red Mazda CX-5 front view">
-            </figure>
-            <div class="car-card-body">
-              <span class="tag">Compact Class</span>
-              <h3>Mazda CX-5</h3>
-              <p>Easy handling, polished cabin feel and a city-friendly profile.</p>
-              <dl>
-                <div><dt>Seats</dt><dd>5</dd></div>
-                <div><dt>Best for</dt><dd>City & business</dd></div>
-              </dl>
-              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20book%20the%20Mazda%20CX-5." class="text-link">Request Mazda</a>
-            </div>
-          </article>
-
-          <article class="car-card reveal" data-category="luxury sedan">
-            <figure>
-              <img src="assets/black-prado-rear.jpeg" alt="Black Toyota Prado rear view">
-            </figure>
-            <div class="car-card-body">
-              <span class="tag">Executive</span>
-              <h3>Luxury & Sedan Desk</h3>
-              <p>Ask for available executive sedans, chauffeur-ready options and VIP transfers.</p>
-              <dl>
-                <div><dt>Seats</dt><dd>4-5</dd></div>
-                <div><dt>Best for</dt><dd>Meetings & arrivals</dd></div>
-              </dl>
-              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20want%20to%20ask%20about%20luxury%20or%20sedan%20hire." class="text-link">Ask availability</a>
+              <a href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20what%20fuel%20saver%20cars%20are%20available%20today%3F" class="text-link">Ask availability</a>
             </div>
           </article>
         </div>
@@ -223,50 +257,50 @@
       <section class="service-band" id="service">
         <div class="service-copy reveal">
           <p class="eyebrow">Built for real travel</p>
-          <h2>Clean handovers, flexible bookings and vehicles that suit the road ahead.</h2>
-          <a class="button primary" href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20need%20help%20choosing%20a%20rental%20car.">Chat on WhatsApp</a>
+          <h2>Pick the rate, choose the car class, then book direct.</h2>
+          <a class="button primary" href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20need%20help%20choosing%20a%20rental%20car%20and%20daily%20rate.">Chat on WhatsApp</a>
         </div>
         <div class="service-list">
           <article class="service-item reveal">
             <span>01</span>
-            <h3>Airport to hotel</h3>
-            <p>Pickup support for arrivals, guest movement and luggage-friendly transfers.</p>
+            <h3>Fuel savers</h3>
+            <p>From $50 per day for economical city movement and daily errands.</p>
           </article>
           <article class="service-item reveal">
             <span>02</span>
-            <h3>Self-drive hire</h3>
-            <p>Daily rental options for drivers who want privacy and freedom on their schedule.</p>
+            <h3>SUVs & double cabs</h3>
+            <p>From $70 for mid-size SUVs and from $120 for larger SUV or pickup hire.</p>
           </article>
           <article class="service-item reveal">
             <span>03</span>
-            <h3>Chauffeur option</h3>
-            <p>Ask for a driver when the trip calls for a calmer, door-to-door experience.</p>
+            <h3>Minibuses</h3>
+            <p>From $100 per day for group transfers, events and team travel.</p>
           </article>
         </div>
       </section>
 
       <section class="routes section" id="routes">
         <div class="route-card reveal">
-          <img src="assets/white-rocco-sunset.jpeg" alt="White Hilux Rocco at sunset">
+          <img src="assets/minibus-interior.jpeg" alt="Minibus interior seating available for hire">
           <div>
-            <p class="eyebrow">Trip-ready rentals</p>
-            <h2>Arrive with the right car for the occasion.</h2>
-            <p>Business transfers, family holidays, wedding movement, events, errands and out-of-town road trips are easier when the car matches the day.</p>
+            <p class="eyebrow">Group and private hire</p>
+            <h2>From one passenger to a full crew.</h2>
+            <p>Book compact cars for daily economy, SUVs for comfort, double cabs for utility, or minibuses when everyone needs to move together.</p>
           </div>
         </div>
         <div class="route-stats reveal" aria-label="Rental benefits">
-          <div><strong>4</strong><span>Rental classes</span></div>
-          <div><strong>7</strong><span>Seat SUV options</span></div>
-          <div><strong>24h</strong><span>Direct booking line</span></div>
+          <div><strong>$50</strong><span>Fuel saver daily rate</span></div>
+          <div><strong>$70</strong><span>Mid-size SUV daily rate</span></div>
+          <div><strong>$100</strong><span>Minibus from / day</span></div>
         </div>
       </section>
 
       <section class="contact section reveal" id="contact">
-        <img src="assets/fambai-logo.jpeg" alt="Fambai Travel Agency logo">
+        <img src="assets/fambai-car-rental-gold.jpeg" alt="Fambai Car Rental logo">
         <div>
           <p class="eyebrow">Ready when you are</p>
-          <h2>Call Fambai Travel Agency and reserve your next ride.</h2>
-          <p>Tell the team your dates, route, passenger count and preferred class. They will guide you to the best available option.</p>
+          <h2>Call Fambai Car Rental and reserve your next ride.</h2>
+          <p>Tell the team your dates, route, passenger count and preferred class. They will confirm availability and guide you to the best daily rate.</p>
           <div class="contact-actions">
             <a class="button primary" href="tel:0780391836">Call 0780391836</a>
             <a class="button ghost dark" href="https://wa.me/263780391836?text=Hi%20Fambai%2C%20I%20would%20like%20to%20rent%20a%20car.">WhatsApp now</a>
@@ -276,7 +310,7 @@
     </main>
 
     <footer>
-      <span>Fambai Travel Agency</span>
+      <span>Fambai Car Rental</span>
       <a href="tel:0780391836">0780391836</a>
     </footer>
 
