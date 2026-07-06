@@ -1,8 +1,10 @@
 const header = document.querySelector("[data-header]");
 const revealItems = [...document.querySelectorAll(".reveal")];
 const filterButtons = [...document.querySelectorAll("[data-filter]")];
+const priceTiles = [...document.querySelectorAll("[data-price-filter]")];
 const fleetCards = [...document.querySelectorAll("[data-category]")];
 const bookingForm = document.querySelector("[data-booking-form]");
+const bookingType = bookingForm.querySelector('select[name="type"]');
 
 const updateHeader = () => {
   header.classList.toggle("is-scrolled", window.scrollY > 24);
@@ -26,19 +28,42 @@ revealItems.forEach((item, index) => {
   revealObserver.observe(item);
 });
 
+const typeLabels = {
+  fuel: "Fuel Saver - from $50/day",
+  midsize: "Mid-size SUV - from $70/day",
+  doublecab: "Double Cab - from $120/day",
+  suv: "SUV - from $120/day",
+  minibus: "Minibus - from $100/day",
+};
+
+const applyFleetFilter = (filter, shouldScroll = true) => {
+  filterButtons.forEach((item) => item.classList.toggle("active", item.dataset.filter === filter));
+  priceTiles.forEach((item) => item.classList.toggle("active", item.dataset.priceFilter === filter));
+
+  fleetCards.forEach((card) => {
+    const categories = card.dataset.category.split(" ");
+    const shouldShow = filter === "all" || categories.includes(filter);
+    card.classList.toggle("is-hidden", !shouldShow);
+  });
+
+  if (typeLabels[filter]) {
+    bookingType.value = typeLabels[filter];
+  }
+
+  if (shouldScroll) {
+    document.querySelector("#fleet").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
+
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const filter = button.dataset.filter;
+    applyFleetFilter(button.dataset.filter);
+  });
+});
 
-    filterButtons.forEach((item) => item.classList.toggle("active", item === button));
-
-    fleetCards.forEach((card) => {
-      const categories = card.dataset.category.split(" ");
-      const shouldShow = filter === "all" || categories.includes(filter);
-      card.classList.toggle("is-hidden", !shouldShow);
-    });
-
-    document.querySelector("#fleet").scrollIntoView({ behavior: "smooth", block: "start" });
+priceTiles.forEach((tile) => {
+  tile.addEventListener("click", () => {
+    applyFleetFilter(tile.dataset.priceFilter);
   });
 });
 

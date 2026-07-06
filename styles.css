@@ -26,7 +26,7 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--text);
   background:
-    linear-gradient(180deg, #ffffff 0, var(--paper) 54%, #eef4fb 100%);
+    linear-gradient(180deg, #ffffff 0, #f7fbff 48%, #eef4fb 100%);
   overflow-x: hidden;
 }
 
@@ -57,7 +57,7 @@ select {
   min-height: 76px;
   padding: 10px 14px 10px 12px;
   color: #fff;
-  background: linear-gradient(90deg, rgba(3, 18, 37, 0.7), rgba(3, 18, 37, 0.38));
+  background: linear-gradient(90deg, rgba(3, 18, 37, 0.64), rgba(0, 63, 134, 0.28));
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 8px;
   backdrop-filter: blur(24px);
@@ -81,21 +81,21 @@ select {
 
 .logo-shell {
   display: grid;
-  width: 54px;
-  height: 54px;
+  width: 60px;
+  height: 50px;
   place-items: center;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.94);
-  border: 1px solid rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.46);
   border-radius: 8px;
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .logo-shell img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transform: scale(1.08);
+  object-fit: contain;
+  transform: scale(1.18);
 }
 
 .brand-copy {
@@ -199,7 +199,7 @@ select {
   width: min(1180px, calc(100% - 40px));
   min-height: 100svh;
   margin: 0 auto;
-  padding: 112px 0 86px;
+  padding: 108px 0 78px;
 }
 
 .hero-copy {
@@ -223,19 +223,19 @@ p {
 }
 
 h1 {
-  max-width: 700px;
-  margin-bottom: 24px;
-  font-size: 4.75rem;
-  font-weight: 590;
-  line-height: 1.02;
+  max-width: 600px;
+  margin-bottom: 18px;
+  font-size: 3.85rem;
+  font-weight: 570;
+  line-height: 1.06;
   letter-spacing: 0;
 }
 
 h2 {
   margin-bottom: 16px;
-  font-size: 3.35rem;
-  font-weight: 580;
-  line-height: 1.04;
+  font-size: 2.65rem;
+  font-weight: 560;
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
@@ -308,10 +308,10 @@ h3 {
 .booking-card {
   padding: 16px;
   color: var(--text);
-  background: rgba(255, 255, 255, 0.82);
-  border: 1px solid rgba(255, 255, 255, 0.52);
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(255, 255, 255, 0.42);
   border-radius: 8px;
-  box-shadow: 0 30px 90px rgba(3, 18, 37, 0.2);
+  box-shadow: 0 24px 68px rgba(3, 18, 37, 0.16);
   backdrop-filter: blur(28px);
 }
 
@@ -399,9 +399,9 @@ select:focus {
   width: min(1180px, calc(100% - 40px));
   margin: -34px auto 0;
   overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  box-shadow: 0 30px 90px rgba(4, 25, 54, 0.08);
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 18px 58px rgba(4, 25, 54, 0.08);
 }
 
 .type-pill {
@@ -411,7 +411,7 @@ select:focus {
   padding: 14px 16px;
   text-align: left;
   color: var(--blue-ink);
-  background: #fff;
+  background: rgba(255, 255, 255, 0.88);
   border: 0;
   border-radius: 0;
   box-shadow: none;
@@ -432,8 +432,8 @@ select:focus {
 
 .type-pill:hover,
 .type-pill.active {
-  background: #fff7f0;
-  box-shadow: inset 0 3px 0 var(--orange);
+  background: #fff;
+  box-shadow: inset 0 3px 0 var(--orange), 0 14px 34px rgba(0, 63, 134, 0.08);
   transform: none;
 }
 
@@ -453,21 +453,35 @@ select:focus {
 .pricing {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 1px;
-  overflow: hidden;
+  gap: 10px;
+  overflow: visible;
   padding-top: 0;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  box-shadow: 0 22px 70px rgba(4, 25, 54, 0.07);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
-.pricing article {
+.price-tile {
   display: grid;
   gap: 4px;
-  min-height: 122px;
+  min-height: 106px;
   align-content: center;
-  padding: 18px;
+  padding: 16px 18px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(8, 38, 79, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 16px 46px rgba(4, 25, 54, 0.06);
+  cursor: pointer;
+  transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.24s ease, background 0.24s ease;
+}
+
+.price-tile:hover,
+.price-tile.active {
+  transform: translateY(-3px);
   background: #fff;
+  border-color: rgba(255, 106, 0, 0.28);
+  box-shadow: 0 20px 54px rgba(0, 63, 134, 0.1);
 }
 
 .pricing span {
@@ -477,7 +491,7 @@ select:focus {
 
 .pricing strong {
   color: var(--orange);
-  font-size: 2.15rem;
+  font-size: 1.85rem;
   font-weight: 640;
   line-height: 1;
 }
@@ -513,16 +527,16 @@ select:focus {
 
 .car-card {
   overflow: hidden;
-  background: #fff;
-  border: 1px solid rgba(8, 38, 79, 0.08);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(8, 38, 79, 0.06);
   border-radius: 8px;
-  box-shadow: 0 22px 70px rgba(4, 25, 54, 0.07);
+  box-shadow: 0 18px 54px rgba(4, 25, 54, 0.06);
   transition: transform 0.32s ease, box-shadow 0.32s ease, opacity 0.3s ease;
 }
 
 .car-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 34px 90px rgba(4, 25, 54, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 26px 76px rgba(4, 25, 54, 0.1);
 }
 
 .car-card.is-hidden {
@@ -585,13 +599,13 @@ dl {
   gap: 1px;
   margin: 14px 0;
   overflow: hidden;
-  border: 1px solid rgba(8, 38, 79, 0.07);
-  border-radius: 8px;
+  border: 0;
+  border-radius: 0;
 }
 
 dl div {
   padding: 12px;
-  background: #f7f9fd;
+  background: rgba(247, 249, 253, 0.8);
   border-radius: 0;
 }
 
@@ -681,8 +695,8 @@ dd {
   gap: 22px;
   align-items: center;
   padding: 14px;
-  background: #fff;
-  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(8, 38, 79, 0.06);
   border-radius: 8px;
   box-shadow: 0 24px 70px rgba(4, 25, 54, 0.07);
 }
@@ -737,8 +751,7 @@ dd {
   padding: 30px;
   color: #fff;
   background:
-    radial-gradient(circle at 18% 18%, rgba(255, 106, 0, 0.26), transparent 28%),
-    linear-gradient(135deg, var(--blue-deep), var(--blue-ink));
+    linear-gradient(135deg, rgba(3, 18, 37, 0.96), rgba(0, 63, 134, 0.9));
   border-radius: 8px;
   box-shadow: 0 34px 96px rgba(4, 25, 54, 0.16);
 }
@@ -746,12 +759,12 @@ dd {
 .contact img {
   width: 178px;
   aspect-ratio: 1;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.55);
   box-shadow: 0 18px 55px rgba(0, 0, 0, 0.18);
-  transform: scale(1.02);
+  padding: 12px;
 }
 
 .contact p {
@@ -846,11 +859,11 @@ footer {
   }
 
   h1 {
-    font-size: 4.05rem;
+    font-size: 3.25rem;
   }
 
   h2 {
-    font-size: 2.85rem;
+    font-size: 2.35rem;
   }
 
   .quick-select,
@@ -888,7 +901,7 @@ footer {
   }
 
   .logo-shell {
-    width: 40px;
+    width: 48px;
     height: 40px;
   }
 
@@ -911,11 +924,11 @@ footer {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.35rem;
   }
 
   h2 {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
   }
 
   .hero-text {
